@@ -34,8 +34,6 @@ jobs:
           rm -rf IPDBproxy.txt 
           chmod +x ./iptest.sh
           bash ./iptest.sh -t 100
-          python ./df_sorted.py
-          python ./create_proxyip.py
           rm -rf realip*.txt 
           rm -rf ip.txt
       - name: Commit files
